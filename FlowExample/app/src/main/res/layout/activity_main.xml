@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLiveDataCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contador LiveData: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLiveDataCounterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvLiveDataCounter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLiveDataCounter"
+        app:layout_constraintTop_toTopOf="@+id/tvLiveDataCounter"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="LiveData"
+        android:textAllCaps="false"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLiveDataCounter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFlowCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contador Flow: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLiveData" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFlowCounterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvFlowCounter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFlowCounter"
+        app:layout_constraintTop_toTopOf="@+id/tvFlowCounter"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Flow"
+        android:textAllCaps="false"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFlowCounter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStateFlowCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contador StateFlow: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFlow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStateFlowCounterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvStateFlowCounter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStateFlowCounter"
+        app:layout_constraintTop_toTopOf="@+id/tvStateFlowCounter"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStateFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="StateFlow"
+        android:textAllCaps="false"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStateFlowCounter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSharedFlowCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contador SharedFlow: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStateFlow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSharedFlowCounterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvSharedFlowCounter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSharedFlowCounter"
+        app:layout_constraintTop_toTopOf="@+id/tvSharedFlowCounter"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSharedFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="SharedFlow"
+        android:textAllCaps="false"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSharedFlowCounter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
